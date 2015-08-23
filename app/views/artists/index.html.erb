@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <title>Artists</title>
+</head>
+<body>
+  <% Artist.all.each do |artist| %>
+    <a href="<%= artist.to_slug %>.html"><%= artist.name %></a>
+  <% end %>
+</body>
+</html>
